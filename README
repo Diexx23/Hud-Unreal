@@ -1,0 +1,59 @@
+# HUD de Recolección de Orbes - Unreal Engine 5
+
+## Descripción
+
+Este proyecto consiste en la creación de un HUD sencillo en Unreal Engine 5 que muestra en pantalla la cantidad de orbes recolectados por el jugador en tiempo real.
+
+El sistema utiliza Blueprints y Widgets (UMG) para actualizar dinámicamente el contador cada vez que el jugador recoge un orbe dentro del escenario.
+
+---
+
+## Objetivo
+
+El objetivo principal es implementar un sistema básico de interfaz que permita:
+
+- Mostrar la cantidad de orbes recolectados.
+- Actualizar el contador automáticamente.
+- Comprender la comunicación entre Blueprints y Widgets.
+- Introducir el uso de HUDs dentro de Unreal Engine 5.
+
+---
+
+## Tipo de HUD
+
+El HUD implementado es de tipo **No Diegético**.
+
+Esto significa que la interfaz:
+
+- No existe físicamente dentro del mundo del juego.
+- Se muestra únicamente como información visual para el jugador.
+- Funciona como una capa superpuesta en pantalla.
+
+Ejemplos similares:
+- Barras de vida
+- Contadores de puntos
+- Munición
+- Minimapas
+
+---
+
+## Tecnologías Utilizadas
+
+- Unreal Engine 5
+- Blueprints
+- UMG (Unreal Motion Graphics)
+
+---
+
+## Funcionalidades
+
+- Sistema de recolección de orbes.
+- Contador de puntos/orbes.
+- Actualización dinámica del HUD.
+- Comunicación entre Character Blueprint y Widget Blueprint.
+
+---
+
+## Estado Actual
+
+Actualmente el proyecto permite visualizar correctamente en pantalla la cantidad de orbes recolectados por el jugador mediante un HUD funcional y actualizado en tiempo real.
