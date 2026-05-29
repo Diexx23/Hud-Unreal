@@ -6,54 +6,86 @@ Este proyecto consiste en la creación de un HUD sencillo en Unreal Engine 5 que
 
 El sistema utiliza Blueprints y Widgets (UMG) para actualizar dinámicamente el contador cada vez que el jugador recoge un orbe dentro del escenario.
 
+Además, se implementó un efecto visual de daño mediante una superposición roja en pantalla utilizando Post Processing, con el objetivo de representar el estado del jugador al recibir daño.
+
 ---
 
 ## Objetivo
 
 El objetivo principal es implementar un sistema básico de interfaz que permita:
 
-- Mostrar la cantidad de orbes recolectados.
-- Actualizar el contador automáticamente.
-- Comprender la comunicación entre Blueprints y Widgets.
-- Introducir el uso de HUDs dentro de Unreal Engine 5.
+* Mostrar la cantidad de orbes recolectados.
+* Actualizar el contador automáticamente.
+* Comprender la comunicación entre Blueprints y Widgets.
+* Introducir el uso de HUDs dentro de Unreal Engine 5.
+* Implementar retroalimentación visual al recibir daño.
 
 ---
 
-## Tipo de HUD
+## Tipos de HUD Implementados
 
-El HUD implementado es de tipo **No Diegético**.
+### HUD No Diegético
+
+El contador de orbes implementado es de tipo **No Diegético**.
 
 Esto significa que la interfaz:
 
-- No existe físicamente dentro del mundo del juego.
-- Se muestra únicamente como información visual para el jugador.
-- Funciona como una capa superpuesta en pantalla.
+* No existe físicamente dentro del mundo del juego.
+* Se muestra únicamente como información visual para el jugador.
+* Funciona como una capa superpuesta en pantalla.
 
 Ejemplos similares:
-- Barras de vida
-- Contadores de puntos
-- Munición
-- Minimapas
+
+* Barras de vida
+* Contadores de puntos
+* Munición
+* Minimapas
+
+---
+
+### HUD Meta
+
+También se implementó un HUD de tipo **Meta** mediante un efecto de pantalla roja al recibir daño.
+
+Este tipo de HUD:
+
+* Representa el estado físico o emocional del personaje.
+* Afecta directamente la visualización del jugador.
+* Se utiliza para transmitir información de daño o peligro.
+
+El efecto fue desarrollado mediante:
+
+* Materiales Post Process
+* Dynamic Material Instances
+* Configuración de cámara en First Person
 
 ---
 
 ## Tecnologías Utilizadas
 
-- Unreal Engine 5
-- Blueprints
-- UMG (Unreal Motion Graphics)
+* Unreal Engine 5
+* Blueprints
+* UMG (Unreal Motion Graphics)
+* Post Process Materials
 
 ---
 
 ## Funcionalidades
 
-- Sistema de recolección de orbes.
-- Contador de puntos/orbes.
-- Actualización dinámica del HUD.
-- Comunicación entre Character Blueprint y Widget Blueprint.
+* Sistema de recolección de orbes.
+* Contador de puntos/orbes.
+* Actualización dinámica del HUD.
+* Comunicación entre Character Blueprint y Widget Blueprint.
+* Efecto visual de daño con pantalla roja.
+* Uso de materiales dinámicos para efectos en tiempo real.
 
 ---
 
 ## Estado Actual
 
-Actualmente el proyecto permite visualizar correctamente en pantalla la cantidad de orbes recolectados por el jugador mediante un HUD funcional y actualizado en tiempo real.
+Actualmente el proyecto permite:
+
+* Visualizar correctamente en pantalla la cantidad de orbes recolectados.
+* Actualizar el HUD en tiempo real.
+* Mostrar un efecto visual rojo al recibir daño.
+* Utilizar múltiples tipos de HUD dentro de un mismo proyecto funcional en Unreal Engine 5.
